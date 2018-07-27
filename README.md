@@ -3,7 +3,7 @@
 ## Requirements
 
 * [python 3.6+](https://www.python.org/)
-* [mapplener](https://github.com/cog-isa/map-planner/tree/multiMAP)
+* [map-planner](https://github.com/cog-isa/map-planner/tree/multiMAP)
 
 ## Running the tests
 Run with arguments:
