@@ -9,7 +9,9 @@
 Run with arguments:
 * full path to test
 * test number
+
 i.e.
-'''
+
+```
 C:/Users/Projects/map-reasoner/src/benchmarks/spatial/ 5
-'''
+```
