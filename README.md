@@ -6,12 +6,11 @@
 * [map-planner](https://github.com/cog-isa/map-planner/tree/multiMAP)
 
 ## Running the tests
-Run with arguments:
-* full path to test
-* test number
-
-i.e.
-
+Fisrt. Install mapreasoner:
 ```
-C:/Users/Projects/map-reasoner/src/benchmarks/spatial/ 5
+pyhton setup.py install
+```
+Second. Run MapPlanner with arguments:
+```
+LogicalSearch=True, searchpath='mapreasoner.logical_search', searchtype='LogicalMapSearch'
 ```
