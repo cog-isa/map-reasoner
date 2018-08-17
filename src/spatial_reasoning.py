@@ -2,7 +2,10 @@ from mapplanner.grounding.semnet import Sign
 
 
 class MapReasoning:
-    def __init__(self, cell_map, cell_coords, world_model):
+    def __init__(self):
+        pass
+
+    def initialize(self, cell_map, cell_coords, world_model):
         self.cell_map = cell_map
         self.cell_coords = cell_coords
         self.world_model = world_model

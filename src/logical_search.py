@@ -1,11 +1,14 @@
 import logging
 
 from mapplanner.search.mapsearch import MapSearch
-from spatial_reasoning import MapReasoning
+from mapreasoner.spatial_reasoning import MapReasoning
 
 
 class LogicalMapSearch(MapSearch, MapReasoning):
-    def __init__(self, task, logical_search):
+    def __init__(self):
+        pass
+
+    def initialize(self, task, logical_search):
         self.world_model = task.signs
         self.check_pm = task.goal_situation.meanings[1]
         self.active_pm = task.start_situation.meanings[1]
@@ -31,6 +34,5 @@ class LogicalMapSearch(MapSearch, MapReasoning):
         logging.debug('Finish: {0}'.format(self.active_pm.longstr()))
 
     def _logic_expand(self):
-        if self.LogicalSearch:
-            closure_sign = self.closure_function()
-            return closure_sign
+        closure_sign = self.closure_function()
+        return closure_sign
